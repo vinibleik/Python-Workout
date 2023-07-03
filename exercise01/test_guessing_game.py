@@ -1,7 +1,5 @@
-import random
-
 from guessing_game import guessing_game
-from pytest import CaptureFixture, MonkeyPatch, raises
+from pytest import CaptureFixture, MonkeyPatch
 
 
 def test_correct_anser(

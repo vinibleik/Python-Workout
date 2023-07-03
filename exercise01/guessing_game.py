@@ -8,7 +8,7 @@ LOW = 0
 HIGH = 100
 
 
-def guessing_game():
+def guessing_game() -> None:
     number: int = random.randint(LOW, HIGH)
 
     while True:
