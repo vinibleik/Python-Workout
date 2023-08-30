@@ -14,7 +14,13 @@ os.makedirs(os.path.join(dir_path, "beyond"))
 
 filename = sys.argv[1].removesuffix(".py")
 
-with open(os.path.join(dir_path, f"{filename}.py"), mode="x") as f, open(
-    os.path.join(dir_path, f"{filename}_test.py"), mode="x"
-) as test:
-    print(f"The files {f.name} and {test.name} was successful created!")
+filenames_list = [
+    os.path.join(dir_path, f"{filename}.py"),
+    os.path.join(dir_path, f"test_{filename}.py"),
+    os.path.join(dir_path, "beyond", "beyond.py"),
+    os.path.join(dir_path, "beyond", "test_beyond.py"),
+]
+
+for file in filenames_list:
+    with open(file, mode="x") as f:
+        print(f"{f.name} was successful creates!")
