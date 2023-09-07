@@ -1,10 +1,5 @@
 from collections import defaultdict
 
-"""
-For an added challenge, after displaying each shell, also show the usernames
-(sorted alphabetically) who use each of those shells.
-"""
-
 
 # find the word with the greatest number of repeated vowels.
 def most_repeated_vowels(words: list[str]):
