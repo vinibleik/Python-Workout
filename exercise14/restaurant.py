@@ -10,7 +10,7 @@ def restaurant() -> None:
     total: float = 0.0
 
     while True:
-        order = input("Order: ").title()
+        order = input("Order: ").title().strip()
 
         if order == "":
             break
